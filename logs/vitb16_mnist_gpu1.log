@@ -1,0 +1,8 @@
+Using device: cuda:1
+Using math SDPA backend for higher-order gradient compatibility.
+Loading MNIST dataset...
+Train samples: 60000, Test samples: 10000
+
+--- Baseline ViT-B/16 ---
+Epoch 0, Batch 0/118: Loss=2.4504
+Epoch 0 | Train Loss: 2.4885 | Test Accuracy: 10.09%

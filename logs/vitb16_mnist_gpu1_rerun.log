@@ -1,0 +1,62 @@
+Using device: cuda:1
+Using math SDPA backend for higher-order gradient compatibility.
+Loading MNIST dataset...
+Train samples: 60000, Test samples: 10000
+
+--- Baseline ViT-B/16 ---
+Epoch 0, Batch 0/235: Loss=2.4657
+Epoch 0, Batch 150/235: Loss=2.2383
+Epoch 0 | Train Loss: 2.3381 | Test Accuracy: 17.22%
+Epoch 1, Batch 0/235: Loss=2.3078
+Epoch 1, Batch 150/235: Loss=1.9853
+Epoch 1 | Train Loss: 2.0774 | Test Accuracy: 28.78%
+Epoch 2, Batch 0/235: Loss=1.9151
+Epoch 2, Batch 150/235: Loss=1.9994
+Epoch 2 | Train Loss: 2.0771 | Test Accuracy: 23.20%
+Epoch 3, Batch 0/235: Loss=2.0702
+Epoch 3, Batch 150/235: Loss=1.8896
+Epoch 3 | Train Loss: 1.9751 | Test Accuracy: 27.87%
+Epoch 4, Batch 0/235: Loss=1.8048
+Epoch 4, Batch 150/235: Loss=1.7909
+Epoch 4 | Train Loss: 1.9043 | Test Accuracy: 25.51%
+Epoch 5, Batch 0/235: Loss=1.8608
+Epoch 5, Batch 150/235: Loss=1.8035
+Epoch 5 | Train Loss: 1.9301 | Test Accuracy: 26.77%
+Epoch 6, Batch 0/235: Loss=1.8504
+Epoch 6, Batch 150/235: Loss=1.7924
+Epoch 6 | Train Loss: 1.7838 | Test Accuracy: 35.14%
+Epoch 7, Batch 0/235: Loss=1.6378
+Epoch 7, Batch 150/235: Loss=1.6861
+Epoch 7 | Train Loss: 1.6993 | Test Accuracy: 34.60%
+Epoch 8, Batch 0/235: Loss=1.5608
+Epoch 8, Batch 150/235: Loss=1.6735
+Epoch 8 | Train Loss: 1.6425 | Test Accuracy: 39.90%
+Epoch 9, Batch 0/235: Loss=1.6365
+Epoch 9, Batch 150/235: Loss=1.7556
+Epoch 9 | Train Loss: 1.5966 | Test Accuracy: 42.81%
+Final Test Accuracy: 42.81%
+
+--- QI ViT-B/16 without Jet Loss ---
+Traceback (most recent call last):
+  File "/storage/QI/vitb16_mnist.py", line 329, in <module>
+    train_losses_no_jet_1f, test_accuracies_no_jet_1f = run_experiment(
+                                                        ^^^^^^^^^^^^^^^
+  File "/storage/QI/vitb16_mnist.py", line 294, in run_experiment
+    logits = unpack_logits(model(data))
+                           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/QI/vitb16_mnist.py", line 154, in forward
+    grads = torch.autograd.grad(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 515, in grad
+    result = _engine_run_backward(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 148.00 MiB. GPU 1 has a total capacity of 79.18 GiB of which 120.25 MiB is free. Process 179774 has 29.27 GiB memory in use. Process 237232 has 49.78 GiB memory in use. Of the allocated memory 48.76 GiB is allocated by PyTorch, and 355.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

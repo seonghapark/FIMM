@@ -1,0 +1,16 @@
+NOTE! Installing ujson may make loading annotations faster.
+Using device: cuda:0
+Using math SDPA backend for higher-order gradient compatibility.
+Loading COCO dataset...
+Loading annotations into memory...
+Done (t=9.18s)
+Creating index...
+index created!
+Loading annotations into memory...
+Done (t=0.38s)
+Creating index...
+index created!
+Train samples: 117266, Val samples: 4952
+Number of classes in mapping: 80
+
+--- Baseline ViT-B/16 ---

@@ -1,0 +1,6 @@
+Using device: cuda:0
+Loading MNIST dataset...
+Train samples: 60000, Test samples: 10000
+
+--- Baseline ResNet101 ---
+Epoch 0, Batch 0/30: Loss=2.6221
