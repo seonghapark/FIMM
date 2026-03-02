@@ -4,3 +4,66 @@ Train samples: 60000, Test samples: 10000
 
 --- Baseline ResNet101 ---
 Epoch 0, Batch 0/30: Loss=2.6221
+Epoch 0 | Train Loss: 1.0725 | Test Accuracy: 60.24%
+Epoch 1, Batch 0/30: Loss=0.1948
+Epoch 1 | Train Loss: 0.1615 | Test Accuracy: 93.85%
+Epoch 2, Batch 0/30: Loss=0.0725
+Epoch 2 | Train Loss: 0.0608 | Test Accuracy: 95.52%
+Epoch 3, Batch 0/30: Loss=0.0270
+Epoch 3 | Train Loss: 0.0222 | Test Accuracy: 94.97%
+Epoch 4, Batch 0/30: Loss=0.0085
+Epoch 4 | Train Loss: 0.0107 | Test Accuracy: 95.60%
+Epoch 5, Batch 0/30: Loss=0.0042
+Epoch 5 | Train Loss: 0.0092 | Test Accuracy: 95.83%
+Epoch 6, Batch 0/30: Loss=0.0087
+Epoch 6 | Train Loss: 0.0103 | Test Accuracy: 96.28%
+Epoch 7, Batch 0/30: Loss=0.0085
+Epoch 7 | Train Loss: 0.0174 | Test Accuracy: 95.89%
+Epoch 8, Batch 0/30: Loss=0.0161
+Epoch 8 | Train Loss: 0.0164 | Test Accuracy: 95.60%
+Epoch 9, Batch 0/30: Loss=0.0044
+Epoch 9 | Train Loss: 0.0076 | Test Accuracy: 96.67%
+Final Test Accuracy: 96.67%
+
+--- QI ResNet101 without Jet Loss 1F ---
+Traceback (most recent call last):
+  File "/storage/QI/resnet101_mnist.py", line 406, in <module>
+    train_losses_no_jet_1f, test_accuracies_no_jet_1f = run_experiment(
+                                                        ^^^^^^^^^^^^^^^
+  File "/storage/QI/resnet101_mnist.py", line 370, in run_experiment
+    logits = unpack_logits(model(data))
+                           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/QI/resnet101_mnist.py", line 109, in forward
+    o0 = self.compute_local_fisher(x)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/QI/resnet101_mnist.py", line 103, in compute_local_fisher
+    return (self.compute_score(x) ** 2).mean(dim=1, keepdim=True)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/QI/resnet101_mnist.py", line 93, in compute_score
+    energy = self.scalar_projection(h)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (2048x512 and 128x1)

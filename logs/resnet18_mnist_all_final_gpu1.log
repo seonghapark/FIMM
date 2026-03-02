@@ -1,0 +1,522 @@
+Using device: cuda:0
+Loading MNIST dataset...
+Train samples: 60000, Test samples: 10000
+
+--- Baseline ResNet18 ---
+Epoch 0, Batch 0/118: Loss=2.5271
+Epoch 0 | Train Loss: 0.1358 | Test Accuracy: 97.65%
+Epoch 1, Batch 0/118: Loss=0.0235
+Epoch 1 | Train Loss: 0.0453 | Test Accuracy: 97.81%
+Epoch 2, Batch 0/118: Loss=0.0119
+Epoch 2 | Train Loss: 0.0316 | Test Accuracy: 98.73%
+Epoch 3, Batch 0/118: Loss=0.0262
+Epoch 3 | Train Loss: 0.0250 | Test Accuracy: 98.43%
+Epoch 4, Batch 0/118: Loss=0.0111
+Epoch 4 | Train Loss: 0.0189 | Test Accuracy: 98.67%
+Epoch 5, Batch 0/118: Loss=0.0062
+Epoch 5 | Train Loss: 0.0167 | Test Accuracy: 98.52%
+Epoch 6, Batch 0/118: Loss=0.0177
+Epoch 6 | Train Loss: 0.0143 | Test Accuracy: 98.99%
+Epoch 7, Batch 0/118: Loss=0.0039
+Epoch 7 | Train Loss: 0.0186 | Test Accuracy: 98.90%
+Epoch 8, Batch 0/118: Loss=0.0085
+Epoch 8 | Train Loss: 0.0102 | Test Accuracy: 98.57%
+Epoch 9, Batch 0/118: Loss=0.0036
+Epoch 9 | Train Loss: 0.0078 | Test Accuracy: 98.30%
+Epoch 10, Batch 0/118: Loss=0.0043
+Epoch 10 | Train Loss: 0.0107 | Test Accuracy: 98.63%
+Epoch 11, Batch 0/118: Loss=0.0077
+Epoch 11 | Train Loss: 0.0148 | Test Accuracy: 99.16%
+Epoch 12, Batch 0/118: Loss=0.0037
+Epoch 12 | Train Loss: 0.0059 | Test Accuracy: 99.23%
+Epoch 13, Batch 0/118: Loss=0.0025
+Epoch 13 | Train Loss: 0.0059 | Test Accuracy: 99.20%
+Epoch 14, Batch 0/118: Loss=0.0086
+Epoch 14 | Train Loss: 0.0088 | Test Accuracy: 98.99%
+Final Test Accuracy: 98.99%
+
+--- QI ResNet18 without Jet Loss 1F ---
+Epoch 0, Batch 0/118: Loss=2.5840
+Epoch 0, Batch 50/118: Loss=0.1530
+Epoch 0, Batch 100/118: Loss=0.0723
+Epoch 0 | Train Loss: 0.1401 | Test Accuracy: 97.29%
+Epoch 1, Batch 0/118: Loss=0.0342
+Epoch 1, Batch 50/118: Loss=0.0393
+Epoch 1, Batch 100/118: Loss=0.0422
+Epoch 1 | Train Loss: 0.0462 | Test Accuracy: 98.05%
+Epoch 2, Batch 0/118: Loss=0.0374
+Epoch 2, Batch 50/118: Loss=0.0468
+Epoch 2, Batch 100/118: Loss=0.0674
+Epoch 2 | Train Loss: 0.0331 | Test Accuracy: 98.79%
+Epoch 3, Batch 0/118: Loss=0.0191
+Epoch 3, Batch 50/118: Loss=0.0296
+Epoch 3, Batch 100/118: Loss=0.0265
+Epoch 3 | Train Loss: 0.0233 | Test Accuracy: 98.37%
+Epoch 4, Batch 0/118: Loss=0.0206
+Epoch 4, Batch 50/118: Loss=0.0136
+Epoch 4, Batch 100/118: Loss=0.0095
+Epoch 4 | Train Loss: 0.0209 | Test Accuracy: 98.36%
+Epoch 5, Batch 0/118: Loss=0.0122
+Epoch 5, Batch 50/118: Loss=0.0050
+Epoch 5, Batch 100/118: Loss=0.0179
+Epoch 5 | Train Loss: 0.0165 | Test Accuracy: 98.65%
+Epoch 6, Batch 0/118: Loss=0.0339
+Epoch 6, Batch 50/118: Loss=0.0178
+Epoch 6, Batch 100/118: Loss=0.0179
+Epoch 6 | Train Loss: 0.0161 | Test Accuracy: 98.90%
+Epoch 7, Batch 0/118: Loss=0.0027
+Epoch 7, Batch 50/118: Loss=0.0127
+Epoch 7, Batch 100/118: Loss=0.0055
+Epoch 7 | Train Loss: 0.0114 | Test Accuracy: 99.06%
+Epoch 8, Batch 0/118: Loss=0.0043
+Epoch 8, Batch 50/118: Loss=0.0304
+Epoch 8, Batch 100/118: Loss=0.0107
+Epoch 8 | Train Loss: 0.0120 | Test Accuracy: 98.71%
+Epoch 9, Batch 0/118: Loss=0.0015
+Epoch 9, Batch 50/118: Loss=0.0226
+Epoch 9, Batch 100/118: Loss=0.0232
+Epoch 9 | Train Loss: 0.0111 | Test Accuracy: 99.03%
+Epoch 10, Batch 0/118: Loss=0.0004
+Epoch 10, Batch 50/118: Loss=0.0120
+Epoch 10, Batch 100/118: Loss=0.0137
+Epoch 10 | Train Loss: 0.0104 | Test Accuracy: 98.85%
+Epoch 11, Batch 0/118: Loss=0.0026
+Epoch 11, Batch 50/118: Loss=0.0064
+Epoch 11, Batch 100/118: Loss=0.0358
+Epoch 11 | Train Loss: 0.0109 | Test Accuracy: 98.86%
+Epoch 12, Batch 0/118: Loss=0.0139
+Epoch 12, Batch 50/118: Loss=0.0010
+Epoch 12, Batch 100/118: Loss=0.0023
+Epoch 12 | Train Loss: 0.0059 | Test Accuracy: 99.11%
+Epoch 13, Batch 0/118: Loss=0.0021
+Epoch 13, Batch 50/118: Loss=0.0048
+Epoch 13, Batch 100/118: Loss=0.0008
+Epoch 13 | Train Loss: 0.0066 | Test Accuracy: 98.88%
+Epoch 14, Batch 0/118: Loss=0.0010
+Epoch 14, Batch 50/118: Loss=0.0116
+Epoch 14, Batch 100/118: Loss=0.0102
+Epoch 14 | Train Loss: 0.0086 | Test Accuracy: 99.14%
+Final Test Accuracy: 99.14%
+
+--- QI ResNet18 with Jet Loss 1F ---
+Epoch 0, Batch 0/118: Loss=2.6220
+Epoch 0, Batch 50/118: Loss=0.0523
+Epoch 0, Batch 100/118: Loss=0.0976
+Epoch 0 | Train Loss: 0.1358 | Test Accuracy: 97.66%
+Epoch 1, Batch 0/118: Loss=0.0819
+Epoch 1, Batch 50/118: Loss=0.0733
+Epoch 1, Batch 100/118: Loss=0.0614
+Epoch 1 | Train Loss: 0.0461 | Test Accuracy: 98.74%
+Epoch 2, Batch 0/118: Loss=0.0169
+Epoch 2, Batch 50/118: Loss=0.0148
+Epoch 2, Batch 100/118: Loss=0.0404
+Epoch 2 | Train Loss: 0.0308 | Test Accuracy: 98.47%
+Epoch 3, Batch 0/118: Loss=0.0606
+Epoch 3, Batch 50/118: Loss=0.0311
+Epoch 3, Batch 100/118: Loss=0.0195
+Epoch 3 | Train Loss: 0.0260 | Test Accuracy: 98.96%
+Epoch 4, Batch 0/118: Loss=0.0138
+Epoch 4, Batch 50/118: Loss=0.0114
+Epoch 4, Batch 100/118: Loss=0.0209
+Epoch 4 | Train Loss: 0.0177 | Test Accuracy: 98.88%
+Epoch 5, Batch 0/118: Loss=0.0123
+Epoch 5, Batch 50/118: Loss=0.0093
+Epoch 5, Batch 100/118: Loss=0.0218
+Epoch 5 | Train Loss: 0.0164 | Test Accuracy: 98.78%
+Epoch 6, Batch 0/118: Loss=0.0139
+Epoch 6, Batch 50/118: Loss=0.0151
+Epoch 6, Batch 100/118: Loss=0.0139
+Epoch 6 | Train Loss: 0.0159 | Test Accuracy: 98.77%
+Epoch 7, Batch 0/118: Loss=0.0075
+Epoch 7, Batch 50/118: Loss=0.0128
+Epoch 7, Batch 100/118: Loss=0.0098
+Epoch 7 | Train Loss: 0.0151 | Test Accuracy: 98.80%
+Epoch 8, Batch 0/118: Loss=0.0238
+Epoch 8, Batch 50/118: Loss=0.0034
+Epoch 8, Batch 100/118: Loss=0.0349
+Epoch 8 | Train Loss: 0.0096 | Test Accuracy: 98.98%
+Epoch 9, Batch 0/118: Loss=0.0138
+Epoch 9, Batch 50/118: Loss=0.0029
+Epoch 9, Batch 100/118: Loss=0.0049
+Epoch 9 | Train Loss: 0.0099 | Test Accuracy: 99.05%
+Epoch 10, Batch 0/118: Loss=0.0092
+Epoch 10, Batch 50/118: Loss=0.0013
+Epoch 10, Batch 100/118: Loss=0.0180
+Epoch 10 | Train Loss: 0.0144 | Test Accuracy: 98.75%
+Epoch 11, Batch 0/118: Loss=0.0091
+Epoch 11, Batch 50/118: Loss=0.0072
+Epoch 11, Batch 100/118: Loss=0.0047
+Epoch 11 | Train Loss: 0.0114 | Test Accuracy: 99.10%
+Epoch 12, Batch 0/118: Loss=0.0020
+Epoch 12, Batch 50/118: Loss=0.0071
+Epoch 12, Batch 100/118: Loss=0.0179
+Epoch 12 | Train Loss: 0.0078 | Test Accuracy: 99.08%
+Epoch 13, Batch 0/118: Loss=0.0050
+Epoch 13, Batch 50/118: Loss=0.0016
+Epoch 13, Batch 100/118: Loss=0.0057
+Epoch 13 | Train Loss: 0.0044 | Test Accuracy: 99.19%
+Epoch 14, Batch 0/118: Loss=0.0052
+Epoch 14, Batch 50/118: Loss=0.0015
+Epoch 14, Batch 100/118: Loss=0.0175
+Epoch 14 | Train Loss: 0.0065 | Test Accuracy: 99.12%
+Final Test Accuracy: 99.12%
+
+--- QI ResNet18 without Jet Loss 2F ---
+Epoch 0, Batch 0/118: Loss=2.4814
+Epoch 0, Batch 50/118: Loss=0.1229
+Epoch 0, Batch 100/118: Loss=0.0783
+Epoch 0 | Train Loss: 0.1303 | Test Accuracy: 97.43%
+Epoch 1, Batch 0/118: Loss=0.0454
+Epoch 1, Batch 50/118: Loss=0.0441
+Epoch 1, Batch 100/118: Loss=0.0569
+Epoch 1 | Train Loss: 0.0458 | Test Accuracy: 98.50%
+Epoch 2, Batch 0/118: Loss=0.0219
+Epoch 2, Batch 50/118: Loss=0.0434
+Epoch 2, Batch 100/118: Loss=0.0302
+Epoch 2 | Train Loss: 0.0303 | Test Accuracy: 98.66%
+Epoch 3, Batch 0/118: Loss=0.0175
+Epoch 3, Batch 50/118: Loss=0.0158
+Epoch 3, Batch 100/118: Loss=0.0157
+Epoch 3 | Train Loss: 0.0233 | Test Accuracy: 98.67%
+Epoch 4, Batch 0/118: Loss=0.0324
+Epoch 4, Batch 50/118: Loss=0.0239
+Epoch 4, Batch 100/118: Loss=0.0264
+Epoch 4 | Train Loss: 0.0197 | Test Accuracy: 98.88%
+Epoch 5, Batch 0/118: Loss=0.0133
+Epoch 5, Batch 50/118: Loss=0.0211
+Epoch 5, Batch 100/118: Loss=0.0109
+Epoch 5 | Train Loss: 0.0237 | Test Accuracy: 98.47%
+Epoch 6, Batch 0/118: Loss=0.0077
+Epoch 6, Batch 50/118: Loss=0.0086
+Epoch 6, Batch 100/118: Loss=0.0045
+Epoch 6 | Train Loss: 0.0114 | Test Accuracy: 98.42%
+Epoch 7, Batch 0/118: Loss=0.0074
+Epoch 7, Batch 50/118: Loss=0.0378
+Epoch 7, Batch 100/118: Loss=0.0196
+Epoch 7 | Train Loss: 0.0150 | Test Accuracy: 98.68%
+Epoch 8, Batch 0/118: Loss=0.0117
+Epoch 8, Batch 50/118: Loss=0.0029
+Epoch 8, Batch 100/118: Loss=0.0021
+Epoch 8 | Train Loss: 0.0087 | Test Accuracy: 98.79%
+Epoch 9, Batch 0/118: Loss=0.0136
+Epoch 9, Batch 50/118: Loss=0.0056
+Epoch 9, Batch 100/118: Loss=0.0111
+Epoch 9 | Train Loss: 0.0131 | Test Accuracy: 99.01%
+Epoch 10, Batch 0/118: Loss=0.0168
+Epoch 10, Batch 50/118: Loss=0.0008
+Epoch 10, Batch 100/118: Loss=0.0126
+Epoch 10 | Train Loss: 0.0087 | Test Accuracy: 99.12%
+Epoch 11, Batch 0/118: Loss=0.0085
+Epoch 11, Batch 50/118: Loss=0.0042
+Epoch 11, Batch 100/118: Loss=0.0068
+Epoch 11 | Train Loss: 0.0105 | Test Accuracy: 99.20%
+Epoch 12, Batch 0/118: Loss=0.0020
+Epoch 12, Batch 50/118: Loss=0.0206
+Epoch 12, Batch 100/118: Loss=0.0063
+Epoch 12 | Train Loss: 0.0111 | Test Accuracy: 99.11%
+Epoch 13, Batch 0/118: Loss=0.0021
+Epoch 13, Batch 50/118: Loss=0.0039
+Epoch 13, Batch 100/118: Loss=0.0152
+Epoch 13 | Train Loss: 0.0063 | Test Accuracy: 98.99%
+Epoch 14, Batch 0/118: Loss=0.0099
+Epoch 14, Batch 50/118: Loss=0.0087
+Epoch 14, Batch 100/118: Loss=0.0009
+Epoch 14 | Train Loss: 0.0061 | Test Accuracy: 99.03%
+Final Test Accuracy: 99.03%
+[Info] Jet loss is not supported for MNISTClassifier2F; running without Jet loss.
+
+--- QI ResNet18 with Jet Loss 2F ---
+Epoch 0, Batch 0/118: Loss=2.5615
+Epoch 0, Batch 50/118: Loss=0.0578
+Epoch 0, Batch 100/118: Loss=0.0611
+Epoch 0 | Train Loss: 0.1338 | Test Accuracy: 96.98%
+Epoch 1, Batch 0/118: Loss=0.0375
+Epoch 1, Batch 50/118: Loss=0.0235
+Epoch 1, Batch 100/118: Loss=0.0326
+Epoch 1 | Train Loss: 0.0442 | Test Accuracy: 98.20%
+Epoch 2, Batch 0/118: Loss=0.0276
+Epoch 2, Batch 50/118: Loss=0.0329
+Epoch 2, Batch 100/118: Loss=0.0390
+Epoch 2 | Train Loss: 0.0336 | Test Accuracy: 98.07%
+Epoch 3, Batch 0/118: Loss=0.0267
+Epoch 3, Batch 50/118: Loss=0.0224
+Epoch 3, Batch 100/118: Loss=0.0220
+Epoch 3 | Train Loss: 0.0236 | Test Accuracy: 98.40%
+Epoch 4, Batch 0/118: Loss=0.0082
+Epoch 4, Batch 50/118: Loss=0.0221
+Epoch 4, Batch 100/118: Loss=0.0080
+Epoch 4 | Train Loss: 0.0188 | Test Accuracy: 98.70%
+Epoch 5, Batch 0/118: Loss=0.0049
+Epoch 5, Batch 50/118: Loss=0.0094
+Epoch 5, Batch 100/118: Loss=0.0423
+Epoch 5 | Train Loss: 0.0148 | Test Accuracy: 98.60%
+Epoch 6, Batch 0/118: Loss=0.0131
+Epoch 6, Batch 50/118: Loss=0.0011
+Epoch 6, Batch 100/118: Loss=0.0081
+Epoch 6 | Train Loss: 0.0153 | Test Accuracy: 98.61%
+Epoch 7, Batch 0/118: Loss=0.0026
+Epoch 7, Batch 50/118: Loss=0.0069
+Epoch 7, Batch 100/118: Loss=0.0016
+Epoch 7 | Train Loss: 0.0129 | Test Accuracy: 98.85%
+Epoch 8, Batch 0/118: Loss=0.0069
+Epoch 8, Batch 50/118: Loss=0.0156
+Epoch 8, Batch 100/118: Loss=0.0070
+Epoch 8 | Train Loss: 0.0137 | Test Accuracy: 99.07%
+Epoch 9, Batch 0/118: Loss=0.0013
+Epoch 9, Batch 50/118: Loss=0.0068
+Epoch 9, Batch 100/118: Loss=0.0068
+Epoch 9 | Train Loss: 0.0144 | Test Accuracy: 98.61%
+Epoch 10, Batch 0/118: Loss=0.0121
+Epoch 10, Batch 50/118: Loss=0.0016
+Epoch 10, Batch 100/118: Loss=0.0126
+Epoch 10 | Train Loss: 0.0091 | Test Accuracy: 98.58%
+Epoch 11, Batch 0/118: Loss=0.0112
+Epoch 11, Batch 50/118: Loss=0.0036
+Epoch 11, Batch 100/118: Loss=0.0166
+Epoch 11 | Train Loss: 0.0082 | Test Accuracy: 98.95%
+Epoch 12, Batch 0/118: Loss=0.0104
+Epoch 12, Batch 50/118: Loss=0.0091
+Epoch 12, Batch 100/118: Loss=0.0035
+Epoch 12 | Train Loss: 0.0081 | Test Accuracy: 99.00%
+Epoch 13, Batch 0/118: Loss=0.0185
+Epoch 13, Batch 50/118: Loss=0.0098
+Epoch 13, Batch 100/118: Loss=0.0117
+Epoch 13 | Train Loss: 0.0097 | Test Accuracy: 99.05%
+Epoch 14, Batch 0/118: Loss=0.0060
+Epoch 14, Batch 50/118: Loss=0.0016
+Epoch 14, Batch 100/118: Loss=0.0021
+Epoch 14 | Train Loss: 0.0053 | Test Accuracy: 99.22%
+Final Test Accuracy: 99.22%
+
+--- QI ResNet18 without Jet Loss 3F ---
+Epoch 0, Batch 0/118: Loss=2.4952
+Epoch 0, Batch 50/118: Loss=0.0912
+Epoch 0, Batch 100/118: Loss=0.0596
+Epoch 0 | Train Loss: 0.1359 | Test Accuracy: 97.04%
+Epoch 1, Batch 0/118: Loss=0.0534
+Epoch 1, Batch 50/118: Loss=0.0466
+Epoch 1, Batch 100/118: Loss=0.0451
+Epoch 1 | Train Loss: 0.0477 | Test Accuracy: 98.22%
+Epoch 2, Batch 0/118: Loss=0.0183
+Epoch 2, Batch 50/118: Loss=0.0265
+Epoch 2, Batch 100/118: Loss=0.0367
+Epoch 2 | Train Loss: 0.0357 | Test Accuracy: 97.52%
+Epoch 3, Batch 0/118: Loss=0.0145
+Epoch 3, Batch 50/118: Loss=0.0400
+Epoch 3, Batch 100/118: Loss=0.0288
+Epoch 3 | Train Loss: 0.0280 | Test Accuracy: 98.73%
+Epoch 4, Batch 0/118: Loss=0.0120
+Epoch 4, Batch 50/118: Loss=0.0051
+Epoch 4, Batch 100/118: Loss=0.0102
+Epoch 4 | Train Loss: 0.0161 | Test Accuracy: 98.32%
+Epoch 5, Batch 0/118: Loss=0.0164
+Epoch 5, Batch 50/118: Loss=0.0158
+Epoch 5, Batch 100/118: Loss=0.0168
+Epoch 5 | Train Loss: 0.0144 | Test Accuracy: 98.93%
+Epoch 6, Batch 0/118: Loss=0.0013
+Epoch 6, Batch 50/118: Loss=0.0107
+Epoch 6, Batch 100/118: Loss=0.0038
+Epoch 6 | Train Loss: 0.0136 | Test Accuracy: 98.97%
+Epoch 7, Batch 0/118: Loss=0.0067
+Epoch 7, Batch 50/118: Loss=0.0104
+Epoch 7, Batch 100/118: Loss=0.0071
+Epoch 7 | Train Loss: 0.0127 | Test Accuracy: 98.66%
+Epoch 8, Batch 0/118: Loss=0.0082
+Epoch 8, Batch 50/118: Loss=0.0077
+Epoch 8, Batch 100/118: Loss=0.0118
+Epoch 8 | Train Loss: 0.0123 | Test Accuracy: 98.62%
+Epoch 9, Batch 0/118: Loss=0.0198
+Epoch 9, Batch 50/118: Loss=0.0119
+Epoch 9, Batch 100/118: Loss=0.0433
+Epoch 9 | Train Loss: 0.0152 | Test Accuracy: 98.47%
+Epoch 10, Batch 0/118: Loss=0.0127
+Epoch 10, Batch 50/118: Loss=0.0154
+Epoch 10, Batch 100/118: Loss=0.0085
+Epoch 10 | Train Loss: 0.0137 | Test Accuracy: 99.11%
+Epoch 11, Batch 0/118: Loss=0.0116
+Epoch 11, Batch 50/118: Loss=0.0016
+Epoch 11, Batch 100/118: Loss=0.0165
+Epoch 11 | Train Loss: 0.0063 | Test Accuracy: 99.11%
+Epoch 12, Batch 0/118: Loss=0.0040
+Epoch 12, Batch 50/118: Loss=0.0102
+Epoch 12, Batch 100/118: Loss=0.0064
+Epoch 12 | Train Loss: 0.0058 | Test Accuracy: 99.34%
+Epoch 13, Batch 0/118: Loss=0.0006
+Epoch 13, Batch 50/118: Loss=0.0049
+Epoch 13, Batch 100/118: Loss=0.0011
+Epoch 13 | Train Loss: 0.0070 | Test Accuracy: 98.56%
+Epoch 14, Batch 0/118: Loss=0.0037
+Epoch 14, Batch 50/118: Loss=0.0202
+Epoch 14, Batch 100/118: Loss=0.0100
+Epoch 14 | Train Loss: 0.0111 | Test Accuracy: 98.45%
+Final Test Accuracy: 98.45%
+[Info] Jet loss is not supported for MNISTClassifier3F; running without Jet loss.
+
+--- QI ResNet18 with Jet Loss 3F ---
+Epoch 0, Batch 0/118: Loss=2.6128
+Epoch 0, Batch 50/118: Loss=0.0730
+Epoch 0, Batch 100/118: Loss=0.0789
+Epoch 0 | Train Loss: 0.1351 | Test Accuracy: 98.20%
+Epoch 1, Batch 0/118: Loss=0.0253
+Epoch 1, Batch 50/118: Loss=0.0596
+Epoch 1, Batch 100/118: Loss=0.0345
+Epoch 1 | Train Loss: 0.0441 | Test Accuracy: 97.34%
+Epoch 2, Batch 0/118: Loss=0.0444
+Epoch 2, Batch 50/118: Loss=0.0092
+Epoch 2, Batch 100/118: Loss=0.0382
+Epoch 2 | Train Loss: 0.0306 | Test Accuracy: 97.77%
+Epoch 3, Batch 0/118: Loss=0.0232
+Epoch 3, Batch 50/118: Loss=0.0252
+Epoch 3, Batch 100/118: Loss=0.0294
+Epoch 3 | Train Loss: 0.0255 | Test Accuracy: 98.41%
+Epoch 4, Batch 0/118: Loss=0.0202
+Epoch 4, Batch 50/118: Loss=0.0180
+Epoch 4, Batch 100/118: Loss=0.0312
+Epoch 4 | Train Loss: 0.0179 | Test Accuracy: 98.79%
+Epoch 5, Batch 0/118: Loss=0.0131
+Epoch 5, Batch 50/118: Loss=0.0163
+Epoch 5, Batch 100/118: Loss=0.0243
+Epoch 5 | Train Loss: 0.0174 | Test Accuracy: 98.15%
+Epoch 6, Batch 0/118: Loss=0.0087
+Epoch 6, Batch 50/118: Loss=0.0157
+Epoch 6, Batch 100/118: Loss=0.0070
+Epoch 6 | Train Loss: 0.0136 | Test Accuracy: 97.57%
+Epoch 7, Batch 0/118: Loss=0.0151
+Epoch 7, Batch 50/118: Loss=0.0172
+Epoch 7, Batch 100/118: Loss=0.0135
+Epoch 7 | Train Loss: 0.0132 | Test Accuracy: 98.78%
+Epoch 8, Batch 0/118: Loss=0.0101
+Epoch 8, Batch 50/118: Loss=0.0044
+Epoch 8, Batch 100/118: Loss=0.0054
+Epoch 8 | Train Loss: 0.0100 | Test Accuracy: 99.02%
+Epoch 9, Batch 0/118: Loss=0.0124
+Epoch 9, Batch 50/118: Loss=0.0120
+Epoch 9, Batch 100/118: Loss=0.0069
+Epoch 9 | Train Loss: 0.0106 | Test Accuracy: 99.21%
+Epoch 10, Batch 0/118: Loss=0.0006
+Epoch 10, Batch 50/118: Loss=0.0031
+Epoch 10, Batch 100/118: Loss=0.0109
+Epoch 10 | Train Loss: 0.0080 | Test Accuracy: 98.93%
+Epoch 11, Batch 0/118: Loss=0.0027
+Epoch 11, Batch 50/118: Loss=0.0063
+Epoch 11, Batch 100/118: Loss=0.0110
+Epoch 11 | Train Loss: 0.0088 | Test Accuracy: 98.18%
+Epoch 12, Batch 0/118: Loss=0.0103
+Epoch 12, Batch 50/118: Loss=0.0049
+Epoch 12, Batch 100/118: Loss=0.0424
+Epoch 12 | Train Loss: 0.0107 | Test Accuracy: 98.57%
+Epoch 13, Batch 0/118: Loss=0.0102
+Epoch 13, Batch 50/118: Loss=0.0120
+Epoch 13, Batch 100/118: Loss=0.0008
+Epoch 13 | Train Loss: 0.0088 | Test Accuracy: 99.19%
+Epoch 14, Batch 0/118: Loss=0.0017
+Epoch 14, Batch 50/118: Loss=0.0058
+Epoch 14, Batch 100/118: Loss=0.0030
+Epoch 14 | Train Loss: 0.0057 | Test Accuracy: 98.98%
+Final Test Accuracy: 98.98%
+
+--- QI ResNet18 with Fisher from Every Layer ---
+Epoch 0, Batch 0/118: Loss=2.5135
+Epoch 0 | Train Loss: 0.1375 | Test Accuracy: 98.05%
+Epoch 1, Batch 0/118: Loss=0.0478
+Epoch 1 | Train Loss: 0.0414 | Test Accuracy: 98.31%
+Epoch 2, Batch 0/118: Loss=0.0161
+Epoch 2 | Train Loss: 0.0302 | Test Accuracy: 98.29%
+Epoch 3, Batch 0/118: Loss=0.0080
+Epoch 3 | Train Loss: 0.0229 | Test Accuracy: 98.31%
+Epoch 4, Batch 0/118: Loss=0.0189
+Epoch 4 | Train Loss: 0.0230 | Test Accuracy: 98.81%
+Epoch 5, Batch 0/118: Loss=0.0269
+Epoch 5 | Train Loss: 0.0183 | Test Accuracy: 98.15%
+Epoch 6, Batch 0/118: Loss=0.0065
+Epoch 6 | Train Loss: 0.0120 | Test Accuracy: 98.61%
+Epoch 7, Batch 0/118: Loss=0.0358
+Epoch 7 | Train Loss: 0.0137 | Test Accuracy: 98.78%
+Epoch 8, Batch 0/118: Loss=0.0107
+Epoch 8 | Train Loss: 0.0115 | Test Accuracy: 98.76%
+Epoch 9, Batch 0/118: Loss=0.0057
+Epoch 9 | Train Loss: 0.0106 | Test Accuracy: 98.80%
+Epoch 10, Batch 0/118: Loss=0.0042
+Epoch 10 | Train Loss: 0.0118 | Test Accuracy: 98.91%
+Epoch 11, Batch 0/118: Loss=0.0183
+Epoch 11 | Train Loss: 0.0086 | Test Accuracy: 98.76%
+Epoch 12, Batch 0/118: Loss=0.0063
+Epoch 12 | Train Loss: 0.0095 | Test Accuracy: 98.63%
+Epoch 13, Batch 0/118: Loss=0.0135
+Epoch 13 | Train Loss: 0.0108 | Test Accuracy: 98.90%
+Epoch 14, Batch 0/118: Loss=0.0030
+Epoch 14 | Train Loss: 0.0047 | Test Accuracy: 98.99%
+Final Test Accuracy: 98.99%
+[Info] Jet loss is not supported for MNISTClassifierAllF; running without Jet loss.
+
+--- QI ResNet18 with Fisher from Every Layer ---
+Epoch 0, Batch 0/118: Loss=2.6036
+Epoch 0 | Train Loss: 0.1377 | Test Accuracy: 97.70%
+Epoch 1, Batch 0/118: Loss=0.0376
+Epoch 1 | Train Loss: 0.0438 | Test Accuracy: 97.52%
+Epoch 2, Batch 0/118: Loss=0.0182
+Epoch 2 | Train Loss: 0.0331 | Test Accuracy: 98.05%
+Epoch 3, Batch 0/118: Loss=0.0332
+Epoch 3 | Train Loss: 0.0266 | Test Accuracy: 98.52%
+Epoch 4, Batch 0/118: Loss=0.0167
+Epoch 4 | Train Loss: 0.0184 | Test Accuracy: 98.26%
+Epoch 5, Batch 0/118: Loss=0.0295
+Epoch 5 | Train Loss: 0.0176 | Test Accuracy: 98.64%
+Epoch 6, Batch 0/118: Loss=0.0078
+Epoch 6 | Train Loss: 0.0105 | Test Accuracy: 98.39%
+Epoch 7, Batch 0/118: Loss=0.0105
+Epoch 7 | Train Loss: 0.0166 | Test Accuracy: 98.87%
+Epoch 8, Batch 0/118: Loss=0.0025
+Epoch 8 | Train Loss: 0.0113 | Test Accuracy: 98.89%
+Epoch 9, Batch 0/118: Loss=0.0053
+Epoch 9 | Train Loss: 0.0094 | Test Accuracy: 98.89%
+Epoch 10, Batch 0/118: Loss=0.0177
+Epoch 10 | Train Loss: 0.0111 | Test Accuracy: 98.89%
+Epoch 11, Batch 0/118: Loss=0.0122
+Epoch 11 | Train Loss: 0.0121 | Test Accuracy: 99.12%
+Epoch 12, Batch 0/118: Loss=0.0028
+Epoch 12 | Train Loss: 0.0089 | Test Accuracy: 98.78%
+Epoch 13, Batch 0/118: Loss=0.0153
+Epoch 13 | Train Loss: 0.0078 | Test Accuracy: 98.55%
+Epoch 14, Batch 0/118: Loss=0.0064
+Epoch 14 | Train Loss: 0.0096 | Test Accuracy: 99.10%
+Final Test Accuracy: 99.10%
+
+--- Results Comparison ---
+Results saved to training_results_mnist_all_final.csv
+
+DataFrame Preview:
+    Epoch  Baseline_Train_Loss  ...  Jet_AllF_Train_Loss  Jet_AllF_Test_Accuracy
+0       0             0.135828  ...             0.137683                   97.70
+1       1             0.045297  ...             0.043771                   97.52
+2       2             0.031587  ...             0.033138                   98.05
+3       3             0.024976  ...             0.026643                   98.52
+4       4             0.018876  ...             0.018398                   98.26
+5       5             0.016658  ...             0.017558                   98.64
+6       6             0.014278  ...             0.010541                   98.39
+7       7             0.018586  ...             0.016631                   98.87
+8       8             0.010161  ...             0.011273                   98.89
+9       9             0.007758  ...             0.009438                   98.89
+10     10             0.010657  ...             0.011111                   98.89
+11     11             0.014790  ...             0.012071                   99.12
+12     12             0.005910  ...             0.008921                   98.78
+13     13             0.005852  ...             0.007805                   98.55
+14     14             0.008831  ...             0.009560                   99.10
+
+[15 rows x 19 columns]
+
+Comparison plot saved as 'training_results_mnist_all_final.png'
+
+============================================================
+Final Test Accuracy Summary:
+============================================================
+Baseline ResNet18:          98.99%
+QI without Jet Loss 1F:     99.14%
+QI with Jet Loss 1F:        99.12%
+QI without Jet Loss 2F:     99.03%
+QI with Jet Loss 2F:        99.22%
+QI without Jet Loss 3F:     98.45%
+QI with Jet Loss 3F:        98.98%
+QI without Jet Loss AllF:   98.99%
+QI with Jet Loss AllF:      99.10%
+============================================================
